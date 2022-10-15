@@ -7,9 +7,12 @@
   padding: 4rem 0;
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: lightblue;
+  color: black;
 }
 
 .footer {
@@ -19,40 +22,84 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  background-color: rgb(28, 133, 225);
+  color: black;
+
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
 
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .title,
 .description {
-  text-align: center;
+  text-align: left;
+}
+
+.image{
+  width: 90%;
+  height: 40%;
+  margin-left: 20%;
+}
+
+.button{
+  width: 20%;
+  padding: 20px;
+  font-size: 15px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 2%;
+  background-color:  rgb(238, 221, 30);
+  color: black;
+  cursor: pointer;
+}
+
+.button2 {
+  border-radius: 4px;
+  background-color: indigo;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 2%;
+  margin-top: 1rem;
+}
+
+.proposalCard {
+  width: fit-content;
+  margin-top: 0.25rem;
+  border: black 2px solid;
+  flex: 1;
+  flex-direction: column;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.flex{
+  flex: auto;
+  align-content: space-between;
 }
 
 .description {
-  margin: 4rem 0;
-  line-height: 1.5;
+  margin: 2rem 0;
+  line-height: 1;
   font-size: 1.5rem;
 }
 
